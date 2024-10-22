@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=11"/>
+    <meta name="generator" content="Doxygen 1.13.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>miniFPC - minimal FPC and RTL</title>
+    <script type="text/javascript" src="/miniFPC/jquery.js"></script>
+    <script type="text/javascript" src="/miniFPC/dynsections.js"></script>
+    <script type="text/javascript" src="/miniFPC/resize.js"></script>
+    <script type="text/javascript" src="/miniFPC/navtree.js"></script>
+    <link href="/miniFPC/doxygen.css"  rel="stylesheet" type="text/css"/>
+    <link href="/miniFPC/Doxyfile.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- this div is important for Doxygen -->
+<div id="titlearea">
+    <table cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr id="projectrow">
+            <td id="projectlogo"><img alt="Logo" src="/miniFPC/img/logo.png"/></td>
+            <td id="projectalign">
+                <div id="projectname">
+                    miniFPC - minimal FPC and RTL
+                    <span id="projectnumber">&#160;0.0.1</span>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+<!-- Erzeugt von Doxygen 1.12.0 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li class="current"><a href="topics.html"><span>Themen</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('group__typedef.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#groups">Themen</a>  </div>
+  <div class="headertitle"><div class="title">typedef<div class="ingroups"><a class="el" href="group__gcc__compiler.html">Der GNU C/C++ Compiler</a> &raquo; <a class="el" href="group__keywords__cc.html">Schlüsselwörter</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
+Themen</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedef__types.html">Varianten</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<p><code>typedef</code> ist ein Schlüsselwort in C und C++, das verwendet wird, um Aliasnamen für bestehende Datentypen zu erstellen. Es ermöglicht, komplexe Typen zu vereinfachen und fördert die Lesbarkeit des Codes.</p>
+<h1><a class="anchor" id="autotoc_md0"></a>
+Verwendung</h1>
+<p>Die grundlegende Syntax für typedef ist: </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> existierender_typ neuer_typ_name;</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md1"></a>
+Beispiel</h1>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> ulong;</div>
+</div><!-- fragment --><p>In diesem Beispiel wird <code>ulong</code> als Alias für <code>unsigned long</code> definiert. Dies ist besonders nützlich, wenn ein Typ in vielen Teilen des Codes verwendet wird und ein kürzerer oder klarerer Name bevorzugt wird.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Vorteile</h1>
+<ul>
+<li><b>Kürzere Typnamen:</b> Typen können kürzer und prägnanter gemacht werden.</li>
+<li><b>Lesbarkeit:</b> Komplexe Typen können unter einem verständlicheren Namen zusammengefasst werden.</li>
+<li><b>Flexibilität:</b> Änderungen an der zugrunde liegenden Typdefinition können zentral vorgenommen werden, ohne dass der gesamte Code geändert werden muss.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Typische Anwendungsfälle</h1>
+<ul>
+<li>Definieren von Aliasnamen für strukturierte Typen: <div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line">    <span class="keywordtype">int</span> x;</div>
+<div class="line">    <span class="keywordtype">int</span> y;</div>
+<div class="line">} Point;</div>
+</div><!-- fragment --></li>
+<li>Vereinfachung von Funktionszeigern: <div class="fragment"><div class="line"><span class="keyword">typedef</span> int (*OperationFunc)(int, int);</div>
+</div><!-- fragment --></li>
+</ul>
+<p>Weitere Informationen zu <code>typedef</code> finden Sie in der offiziellen <a href="https://en.cppreference.com/w/cpp/language/typedef">C++ Dokumentation</a>. </p>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Erzeugt von <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

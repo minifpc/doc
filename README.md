@@ -39,6 +39,9 @@ The result will be:
 - 2 chm (Compiled Windows Help):
   * dark style for German Developers
   * light style
+- 2 pdf
+  - English
+  - German
 
 Have a nice Day<p>
 Your miniFPC Team

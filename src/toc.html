@@ -1,0 +1,33 @@
+<h2 id="intro">Einleitung</h2>
+<p>Willkommen...</p>
+
+<h3 id="details">Details</h3>
+<p>Hier sind die Details...</p>
+
+<h3 id="summary">Zusammenfassung</h3>
+<p>Das ist die Zusammenfassung...</p>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Container für TOC erstellen
+    var tocContainer = document.createElement('div');
+    tocContainer.id = 'toc';
+    tocContainer.innerHTML = '<h2>Inhaltsverzeichnis</h2>';
+    var tocList = document.createElement('ul');
+
+    // Alle Überschriften der Seite auswählen
+    var headers = document.querySelectorAll('h2, h3, h4'); // passe die Auswahl an, falls andere Header verwendet werden
+    headers.forEach(function(header) {
+        var tocItem = document.createElement('li');
+        var tocLink = document.createElement('a');
+        tocLink.href = '#' + header.id;
+        tocLink.textContent = header.textContent;
+
+        tocItem.appendChild(tocLink);
+        tocList.appendChild(tocItem);
+    });
+
+    tocContainer.appendChild(tocList);
+    document.body.insertBefore(tocContainer, document.body.firstChild); // TOC am Anfang der Seite hinzufügen
+});
+</script>

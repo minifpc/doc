@@ -10,12 +10,15 @@ PROJECT_NUMBER                   = 0.0.1
 PROJECT_LOGO                     = img/logo.png
 
 CHM_FILE                         = project.chm
-OUTPUT_DIRECTORY                 = out/de/light
+OUTPUT_DIRECTORY                 = out/de
+
+HTML_OUTPUT                      = htm/light
+HTML_COLORSTYLE                  = LIGHT
 
 OUTPUT_LANGUAGE                  = German
 ENABLED_SECTIONS                 = german
 
-HTML_HEADER                      = header.html
+HTML_HEADER                      = header.chm.html
 HTML_FOOTER                      = footer.html
 
 HTML_EXTRA_STYLESHEET            = Doxyfile.css
@@ -31,10 +34,8 @@ GENERATE_TREEVIEW                = NO
 GENERATE_LATEX                   = NO
 GENERATE_CHI                     = YES
 
-HTML_OUTPUT                      = html
-HTML_COLORSTYLE                  = LIGHT
-
-#GENERATE_HIERARCHY               = NO
+CREATE_SUBDIRS                   = NO
+CREATE_SUBDIRS_LEVEL             = 
 
 INPUT += ./pas/mainpage.pas
 
@@ -52,9 +53,6 @@ FILE_PATTERNS                    = *.pas *.dpr
 EXTENSION_MAPPING                = pas=C++ dpr=C++ cc=C++ cpp=C++
 
 ALIASES += colorText{2}="<span style='color:\1;'>\2</span>"
-
-CREATE_SUBDIRS                   = YES
-CREATE_SUBDIRS_LEVEL             = 8
 
 ALWAYS_DETAILED_SEC              = YES
 INLINE_INHERITED_MEMB            = YES

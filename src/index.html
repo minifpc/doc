@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=11"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <title>miniFPC - minimal FPC and RTL</title>
+        
+        <style>
+        html, body {
+            background-color:black;
+            overflow-x: auto;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 1fr 100px;
+            grid-template-areas: 
+                "left main"
+                "left bottom";
+            height: 100vh;
+        }
+        .leftframe {
+            height: 400px;
+            overflow:auto;
+        }
+        .left-frame {
+            grid-area: left;
+            background-color: black;
+            border: 5px solid red;
+            padding: 10px;
+            color: white;
+            height: 100%;
+        }
+        .left-frame ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .left-frame li {
+            margin-bottom: 10px;
+        }
+        .left-frame a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .left-frame a:hover {
+            text-decoration: underline;
+        }
+        .main-frame {
+            grid-area: main;
+            padding: 0px;
+        }
+        .main-frame iframe {
+            width: 100%;
+            height: calc(100vh - 109px);
+            border-top: 5px solid red;
+            border-right: 5px solid red;
+            border-bottom: 5px solid red;
+        }
+        .bottom-frame {
+            grid-area: bottom;
+            height: 74px;
+            background-color: navy;
+            color: #000ff;
+            text-align: left;
+            border-top: 5px solid red;
+            border-bottom: 5px solid red;
+            border-right: 5px solid red;
+            padding: 0px;
+        }
+        .leftframe {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <nav class="left-frame">
+        <div class="leftframe">
+            <iframe name="topic-frame" height="100%" src="/topics.html" frameborder="0"></iframe>
+        </div>
+        </nav>
+        <div class="main-frame">
+            <iframe name="content-frame" src="/miniFPC/index.html" frameborder="0"></iframe>
+        </div>
+        <footer class="bottom-frame" frameborder="0">
+            <div style="padding:5px;background-color:navy;color:yellow;font-weight:bold;font-family:'Arial';font-size:10pt;">
+                Copyright (c) 2024 by Jens Kallup - paule32<br>
+                <span style="color:white;">Alle Rechte vorbehalten.</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

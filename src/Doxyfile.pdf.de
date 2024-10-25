@@ -10,26 +10,39 @@ PROJECT_NUMBER                   = 0.0.1
 PROJECT_LOGO                     = img/logo.png
 
 CHM_FILE                         = project.pdf
-OUTPUT_DIRECTORY                 = docs
+OUTPUT_DIRECTORY                 = out/de
 
-LATEX_OUTPUT                     = latex
+LATEX_OUTPUT                     = tex
 LATEX_BATCHMODE                  = NO
 
-USE_PDFLATEX                     = YES
-PDF_HYPERLINKS                   = YES
-
-GENERATE_LATEX                   = YES
-
+LAYOUT_FILE                      = Doxyfile.layout
 
 OUTPUT_LANGUAGE                  = German
 ENABLED_SECTIONS                 = german
 
+HTML_HEADER                      = 
+HTML_FOOTER                      = 
+
+HTML_EXTRA_STYLESHEET            = 
+
+HHC_LOCATION                     = 
+
 DOXYFILE_ENCODING                = "UTF-8"
 ALLOW_UNICODE_NAMES              = YES
 
-INPUT += ./pas/mainpage.pas
+GENERATE_HTML                    = NO
+GENERATE_HTMLHELP                = NO
+GENERATE_TREEVIEW                = NO
+GENERATE_LATEX                   = YES
+GENERATE_CHI                     = NO
 
 CREATE_SUBDIRS                   = NO
+CREATE_SUBDIRS_LEVEL             = 
+
+INPUT += ./pas/mainpage.pas
+
+USE_PDFLATEX                     = YES
+PDF_HYPERLINKS                   = YES
 
 TOC_EXPAND                       = NO
 
@@ -77,7 +90,7 @@ INLINE_SIMPLE_STRUCTS            = NO
 
 TYPEDEF_HIDES_STRUCT             = NO
 
-LOOKUP_CACHE_SIZE                = 10
+LOOKUP_CACHE_SIZE                = 0
 NUM_PROC_THREADS                 = 2
 CASE_SENSE_NAMES                 = YES
 

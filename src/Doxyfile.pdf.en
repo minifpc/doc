@@ -10,31 +10,32 @@ PROJECT_NUMBER                   = 0.0.1
 PROJECT_LOGO                     = img/logo.png
 
 CHM_FILE                         = project.chm
-OUTPUT_DIRECTORY                 = out/en/dark
+OUTPUT_DIRECTORY                 = out/en
+
+LATEX_OUTPUT                     = tex
+LATEX_BATCHMODE                  = NO
 
 OUTPUT_LANGUAGE                  = English
 ENABLED_SECTIONS                 = english
 
-HTML_HEADER                      = header.html
-HTML_FOOTER                      = footer.html
+HTML_HEADER                      = 
+HTML_FOOTER                      = 
 
-HTML_EXTRA_STYLESHEET            = Doxyfile.css
+HTML_EXTRA_STYLESHEET            = 
 
-HHC_LOCATION                     = $(DOXYGEN_HH)
+HHC_LOCATION                     = 
 
 DOXYFILE_ENCODING                = "UTF-8"
 ALLOW_UNICODE_NAMES              = YES
 
-GENERATE_HTML                    = YES
-GENERATE_HTMLHELP                = YES
+GENERATE_HTML                    = NO
+GENERATE_HTMLHELP                = NO
 GENERATE_TREEVIEW                = NO
-GENERATE_LATEX                   = NO
-GENERATE_CHI                     = YES
+GENERATE_LATEX                   = YES
+GENERATE_CHI                     = NO
 
-HTML_OUTPUT                      = html
-HTML_COLORSTYLE                  = DARK
-
-#GENERATE_HIERARCHY               = NO
+CREATE_SUBDIRS                   = No
+CREATE_SUBDIRS_LEVEL             = 
 
 INPUT += ./pas/mainpage.pas
 
@@ -52,9 +53,6 @@ FILE_PATTERNS                    = *.pas *.dpr
 EXTENSION_MAPPING                = pas=C++ dpr=C++ cc=C++ cpp=C++
 
 ALIASES += colorText{2}="<span style='color:\1;'>\2</span>"
-
-CREATE_SUBDIRS                   = YES
-CREATE_SUBDIRS_LEVEL             = 8
 
 ALWAYS_DETAILED_SEC              = YES
 INLINE_INHERITED_MEMB            = YES
